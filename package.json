@@ -1,0 +1,50 @@
+{
+  "name": "common-expectations",
+  "version": "1.0.0",
+  "description": "Typescript runtime assertions",
+  "author": "Benjamin Forster",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=16.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf ./dist && tsc -p tsconfig.build.cjs.json && tsc -p tsconfig.build.esm.json",
+    "dev": "tsc -p tsconfig.build.esm.json -w",
+    "lint": "eslint src/.",
+    "lint:fix": "eslint --fix src/.",
+    "prepublishOnly": "yarn lint && yarn test",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^28.1.6",
+    "@types/node": "16",
+    "@typescript-eslint/eslint-plugin": "5.31.0",
+    "@typescript-eslint/parser": "5.31.0",
+    "eslint": "8.20.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "jest": "^28.1.3",
+    "prettier": "2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "4.7.4"
+  },
+  "files": [
+    "dist/"
+  ]
+}
