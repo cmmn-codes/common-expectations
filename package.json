@@ -1,6 +1,6 @@
 {
   "name": "common-expectations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript runtime assertions",
   "author": "Benjamin Forster",
   "license": "MIT",
