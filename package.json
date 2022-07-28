@@ -54,5 +54,10 @@
     "assertions",
     "expectations",
     "utilities"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmmn-codes/common-expectations"
+  },
+  "homepage": "https://github.com/cmmn-codes/common-expectations"
 }
