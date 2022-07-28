@@ -1,4 +1,4 @@
-# Common Assertions
+# Common Expectations
 
 A small collection of common typescript functions for asserting and guarding types.
 
@@ -6,9 +6,9 @@ A small collection of common typescript functions for asserting and guarding typ
 
 ```shell
 # using npm
-npm install common-assertions
+npm install common-expectations
 # or using yarn
-yarn add common-assertions
+yarn add common-expectations
 ```
 
 ## Usages
@@ -18,7 +18,7 @@ yarn add common-assertions
 A utility for asserting existence of a value when the type may be `undefined` or `null`.
 
 ```ts
-import { exists } from "common-assertions";
+import { exists } from "common-expectations";
 
 // where use params returns a partial type where `id` maybe undefined.
 const { id } = useParams<{ id: string }>();
@@ -26,18 +26,18 @@ exists(value, 'Expected id to be defined.')
 
 ```
 
-This is intended only to be used in those rare cases where you know based on context that a value 
-exists but the type system is unable to infer the fact. 
+This is intended only to be used in those rare cases where you know based on context that a value
+exists but the type system is unable to infer the fact.
 A good example of this is when using params in React Router.
 
 #### `isUnreachable(value: never, message?: string): void`
 
 A utility for helping check type exhaustiveness.
-It will raise typescript type error when a values type is anything other than `never`, 
+It will raise typescript type error when a values type is anything other than `never`,
 and will throw an error at runtime if a value is encountered.
 
 ```ts
-import { isUnreachable } from "common-assertions";
+import { isUnreachable } from "common-expectations";
 
 type AnimalType = 'cat' | 'dog' | 'monkey';
 
