@@ -1,6 +1,7 @@
 # Common Expectations
 
 [![test-build](https://github.com/cmmn-codes/common-expectations/actions/workflows/test-build.yml/badge.svg)](https://github.com/cmmn-codes/common-expectations/actions/workflows/test-build.yml)
+[![Coverage Status](https://coveralls.io/repos/github/cmmn-codes/common-expectations/badge.svg?branch=main)](https://coveralls.io/github/cmmn-codes/common-expectations?branch=main)
 
 A small collection of common typescript functions for asserting and guarding types.
 
