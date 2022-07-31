@@ -1,5 +1,7 @@
 # Common Expectations
 
+[![test-build](https://github.com/cmmn-codes/common-expectations/actions/workflows/test-build.yml/badge.svg)](https://github.com/cmmn-codes/common-expectations/actions/workflows/test-build.yml)
+
 A small collection of common typescript functions for asserting and guarding types.
 
 ## Installation
